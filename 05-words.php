@@ -7,7 +7,7 @@ function words (string $str) : array {
     return preg_split("/[, ]+/", $str);
 }
 
-// [^\w]+
+// [^\w]+   might be too powerful depending on situation
 // [,\s]+
 
 var_dump(words("This is a sentence")); // ["This", "is", "a", "sentence"]
